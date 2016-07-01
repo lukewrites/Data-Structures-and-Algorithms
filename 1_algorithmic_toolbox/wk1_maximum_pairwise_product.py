@@ -1,13 +1,6 @@
-# encoding=utf8
 """
 Week 1, Assignment 2 for coursera course "algorithmic toolbox."
 """
-
-# this is the coursera boilerplace; take it out for now.
-# n = int(input())
-# li = [int(x) for x in input().split()]
-# assert(len(li) == n)
-
 
 def mpp(li):
     max1 = 0
@@ -19,7 +12,7 @@ def mpp(li):
                 max1 = li[i+1]
             elif li[i+1] > max2:
                 max2 = li[i+1]
-        except IndexError:
+        except IndexError:  # if the list doesn't go that far.
             pass
         if li[i] > max1:
             max2, max1 = max1, li[i]
@@ -30,4 +23,14 @@ def mpp(li):
 
     return max1 * max2
 
-mpp([1, 2, 3, 4, 5])
+# Here's another solution:
+#
+# this is the coursera boilerplate.
+# n = int(input())
+# li = [int(x) for x in input().split()]
+# assert(len(li) == n)
+#
+# high = max(li)
+# li.pop(li.index(max(li)))
+# second_high = max(li)
+# return high * second_high
