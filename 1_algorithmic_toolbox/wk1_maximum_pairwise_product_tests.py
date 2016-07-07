@@ -6,6 +6,7 @@ class testMPP(unittest.TestCase):
 
     def setUp(self):
         self.even_list = [5, 1, 3, 2, 4]
+        self.weird_list = [5, 1, 3, 2, 4, 9]
         self.odd_list = [5, 4, 3]
         self.empty_list = []
 
@@ -19,6 +20,9 @@ class testMPP(unittest.TestCase):
     def test_if_an_empty_list_works(self):
         self.assertFalse(mpp(self.empty_list))  # just for fun.
         self.assertEqual(mpp(self.empty_list), 0)
+
+    def test_weird_list(self):
+        self.assertEqual(mpp(self.weird_list), 45)
 
 
 if __name__ == '__main__':

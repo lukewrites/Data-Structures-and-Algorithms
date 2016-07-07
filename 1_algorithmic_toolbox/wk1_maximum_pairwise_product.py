@@ -1,6 +1,5 @@
-"""
-Week 1, Assignment 2 for coursera course "algorithmic toolbox."
-"""
+"""Week 1, Assignment 2 for coursera course algorithmic toolbox."""
+
 
 def mpp(li):
     max1 = 0
@@ -9,7 +8,7 @@ def mpp(li):
     for i in range(0, len(li), 2):
         try:
             if li[i+1] > max1:
-                max1 = li[i+1]
+                max2, max1 = max1, li[i+1]
             elif li[i+1] > max2:
                 max2 = li[i+1]
         except IndexError:  # if the list doesn't go that far.
