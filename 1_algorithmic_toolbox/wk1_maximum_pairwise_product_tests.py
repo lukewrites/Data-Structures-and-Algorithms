@@ -2,7 +2,9 @@
 
 
 import unittest
-from .wk1_maximum_pairwise_product import mpp
+from .wk1_maximum_pairwise_product import mpp  # this weird dot is here
+                                               # because travis runs unittest
+                                               # from the base directory.
 
 
 class testMPP(unittest.TestCase):
