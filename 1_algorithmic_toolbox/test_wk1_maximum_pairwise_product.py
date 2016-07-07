@@ -1,5 +1,5 @@
 import unittest
-from wk1_maximum_pairwise_product import mpp
+from .wk1_maximum_pairwise_product import mpp
 
 
 class testMPP(unittest.TestCase):
