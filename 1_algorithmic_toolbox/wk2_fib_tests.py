@@ -11,15 +11,19 @@ class testCalcFib(unittest.TestCase):
         self.fib_numbers = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]
 
     def test_if_0_calculates_correctly(self):
+        """Check if input 0 produces correct output."""
         self.assertEqual(calc_fib(0), 0)
 
     def test_if_1_calculates_correctly(self):
+        """Check if input 1 produces correct output."""
         self.assertEqual(calc_fib(1), 1)
 
     def test_if_9_calculates_correctly(self):
+        """Check if the 9th fib number is correct."""
         self.assertEqual(calc_fib(9), self.fib_numbers[9])
 
     def test_if_7_calculates_correctly(self):
+        """Check if the 7th fib num is correct."""
         self.assertEqual(calc_fib(7), self.fib_numbers[7])
 
 if __name__ == '__main__':

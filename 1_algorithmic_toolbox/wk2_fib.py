@@ -4,9 +4,8 @@ def calc_fib(n):
         return n
     else:
         fibs = [0, 1]
-        for number in range(1, n+1):
+        for number in range(1, n):
             fibs.append(fibs[number] + fibs[number-1])
-
     return fibs[n]
 
 # This is coursera boilerplate that isn't necessary outside of there.
