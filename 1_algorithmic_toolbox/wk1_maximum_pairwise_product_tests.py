@@ -27,6 +27,7 @@ class testMPP(unittest.TestCase):
         self.assertEqual(mpp(self.odd_list), 20)
 
     def test_if_an_empty_list_works(self):
+        """Check empty list."""
         self.assertFalse(mpp(self.empty_list))  # just for fun.
         self.assertEqual(mpp(self.empty_list), 0)
 
