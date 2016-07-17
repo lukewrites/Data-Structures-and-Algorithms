@@ -23,13 +23,17 @@ def mpp(li):
     return max1 * max2
 
 # Here's another solution:
+
+# high = max(li)
+# li.pop(li.index(max(li)))
+# second_high = max(li)
+# return high * second_high
+#
+# I think the above is more pythonic, but I imagine it breaks the spirit of an
+# algorithms class in which you're supposed to do everything by hand.
 #
 # this is the coursera boilerplate.
 # n = int(input())
 # li = [int(x) for x in input().split()]
 # assert(len(li) == n)
 #
-# high = max(li)
-# li.pop(li.index(max(li)))
-# second_high = max(li)
-# return high * second_high
