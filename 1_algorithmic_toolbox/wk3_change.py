@@ -1,21 +1,20 @@
 # Uses python3
 import sys
 
-def get_change(m, coins):
+def get_change(m):
+
+    coins = 0
 
     while m:
-        if m - 10 >= 0:
+        while m - 10 >= 0:
             m -= 10
             coins += 1
-            return get_change(m, coins)
-        if m - 5 >= 0:
+        while m - 5 >= 0:
             m -= 5
             coins += 1
-            return get_change(m, coins)
-        if m - 1 >= 0:
+        while m - 1 >= 0:
             m -= 1
             coins += 1
-            return get_change(m, coins)
 
     return coins
 
