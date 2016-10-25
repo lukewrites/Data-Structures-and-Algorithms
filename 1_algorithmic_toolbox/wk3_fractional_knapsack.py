@@ -2,8 +2,13 @@
 import sys
 
 def get_optimal_value(capacity, weights, values):
-    value = 0.
-    # write your code here
+    value = 0
+    # first, I want a list of the values by weight
+    value_by_weight = []
+    for i in range(0, n):
+        value_by_weight.append(values[i]//weights[i])
+    while value < capacity:
+
 
     return value
 
